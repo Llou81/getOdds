@@ -23,7 +23,6 @@ def updateFile(path, lista):
     row = ws.max_row + 1
     for item in lista:
         item.pop(0)
-    for item in lista:
         i = 1
         for odd in item:
             char = get_column_letter(i)
