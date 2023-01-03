@@ -4,6 +4,7 @@ from openpyxl.utils import get_column_letter
 
 ID = [8, 158, 9, 10, 11, 12, 34, 156, 35, 151, 36, 88, 153, 161, 913, 37]
 
+
 def main():
     matches = getMatches(ID)
     updateFile("C:\\Users\\marko.petrovic\\Desktop\\Football Data\\Kvote.xlsx", matches)
@@ -52,8 +53,9 @@ def getMatches(list):
         data = getData(url)
         for kvota in data:
             matches[_].append(kvota["Odds"])
-    
+
     return matches
+
 
 if __name__ == "__main__":
     main()
