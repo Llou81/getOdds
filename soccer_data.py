@@ -7,7 +7,7 @@ ID = [8, 158, 9, 10, 11, 12, 34, 156, 35, 151, 36, 88, 153, 161, 913, 37]
 
 def main():
     matches = getMatches(ID)
-    updateFile("C:\\Users\\marko.petrovic\\Desktop\\Football Data\\Kvote.xlsx", matches)
+    updateFile("Kvote.xlsx", matches)
 
 
 def getData(url):
